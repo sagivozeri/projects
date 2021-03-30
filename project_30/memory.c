@@ -5,27 +5,32 @@
 struct student {
 	int age;
 	int grade;
-	int hight;
+	int height;
 	int weight;
 };
 
 int main(int argc, char **argv)
 {
-	int *addr1 = NULL, *addr2 = NULL;
-	int val1 = 30, val2 = 0;
-	struct student s1, s2;
+	struct student s1 = {0}, s2 = {0};
 
-	addr2 = &val2;
+	s1.age = 20;
+	s1.grade = 80;
+	s1.height = 180;
+	s1.weight = 70;
 
-	printf("addr1 = %p, addr2 = %p, val1 = %d, val2 = %d, "
-		"*addr1 = %d, *addr2 = %d\n", addr1, addr2, val1, val2, *addr1,
-		*addr2);
+	printf("Student s1: age = %d, grade = %d, height = %d, weight = %d\n",
+			s1.age, s1.grade, s1.height, s1.weight);
 
-	memcpy(&val2, &val1, sizeof(int));
+	printf("Student s2: age = %d, grade = %d, height = %d, weight = %d\n",
+			s2.age, s2.grade, s2.height, s2.weight);
 
-	printf("addr1 = %p, addr2 = %p, val1 = %d, val2 = %d, "
-		"*addr1 = %d, *addr2 = %d\n", addr1, addr2, val1, val2, *addr1,
-		*addr2);
+	memcpy(&s2, &s1, sizeof(struct student));
+
+	printf("Student s1: age = %d, grade = %d, height = %d, weight = %d\n",
+			s1.age, s1.grade, s1.height, s1.weight);
+
+	printf("Student s2: age = %d, grade = %d, height = %d, weight = %d\n",
+			s2.age, s2.grade, s2.height, s2.weight);
 
 	return 0;
 }
