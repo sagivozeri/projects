@@ -37,7 +37,7 @@ int push(struct list **head, int data)
 
 	if (!head)
 		return -1;
-	
+
 	elem = (struct list*)malloc(sizeof(struct list));
 	if (!elem)
 		return -1;
@@ -54,7 +54,7 @@ int peek(struct list *head)
 {
 	if (!is_empty(head))
 		return head->data;
-	
+
 	return INVALID_DATA;
 }
 

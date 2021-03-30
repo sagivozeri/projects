@@ -9,7 +9,7 @@ int **A;
 void my_2d_alloc()
 {
 	int i;
-	
+
 	A = (int **)malloc(ROWS * sizeof(int*));
 
 	for (i = 0; i < ROWS; i++)
@@ -40,7 +40,7 @@ void my_2d_print()
 void my_2d_fill()
 {
 	int i, j, val = 0;
-	
+
 	for (i = 0; i < ROWS; i++)
 		for (j = 0; j < COLS; j++) {
 			A[i][j] = val;

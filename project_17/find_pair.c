@@ -49,7 +49,7 @@ int main()
 
 	if (hash_alloc())
 		return 1;
-	
+
 	arr = (int*)malloc(sizeof(int) * size);
 	if (!arr) {
 		printf("Allocation failed\n");

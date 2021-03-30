@@ -7,7 +7,7 @@ int is_letter(char c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c - 'A');
-	
+
 	if (c >= 'a' && c <= 'z')
 		return (c - 'a');
 
@@ -15,7 +15,7 @@ int is_letter(char c)
 }
 
 int is_palindrom(const char *str)
-{ 
+{
 	int i, bitmap = 0, val;
 	int len = strlen(str);
 

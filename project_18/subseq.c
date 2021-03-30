@@ -14,7 +14,7 @@ int sub_seq(int *arr, int *res, int size, int num)
 	res[size-1] = 1;
 	if (!sub_seq(arr, res, size-1, num-arr[size-1]))
 		return 0;
-	
+
 	res[size-1] = 0;
 	return sub_seq(arr, res, size-1, num);
 }
@@ -48,7 +48,7 @@ int main()
 	scanf("%d", &num);
 
 	rc = sub_seq(arr, res, size, num);
-	if (!rc) { 
+	if (!rc) {
 		printf("Found!\n");
 		for (i = 0; i < size; i++)
 			printf("%d ", res[i]);

@@ -5,7 +5,7 @@
 void swap(int *a, int *b)
 {
 	int tmp = *a;
-	
+
 	*a = *b;
 	*b = tmp;
 }
@@ -13,7 +13,7 @@ void swap(int *a, int *b)
 void sort_arr(int *arr, int size)
 {
 	int *s, *m, *e;
-	
+
 	if (size < 2)
 		return;
 
@@ -73,6 +73,6 @@ int main()
     print_arr(arr, SIZE);
     sort_arr(arr, SIZE);
     print_arr(arr, SIZE);
-    
+
     return 0;
 }

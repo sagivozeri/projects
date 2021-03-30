@@ -29,7 +29,7 @@ int main()
 {
 	int n;
 	u64 val;
-	
+
 	printf("Enter a number:\n");
 	scanf("%d", &n);
 

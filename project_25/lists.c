@@ -66,7 +66,7 @@ int delete_nth_elem(struct list **head, int n)
 				*head = curr->next;
 			else
 				prev->next = curr->next;
-			
+
 			data = curr->data;
 			free(curr);
 			return data;
@@ -120,7 +120,7 @@ int main()
 	list_print(head);
 	list_reverse(&head);
 	list_print(head);
-	
+
 	printf("Print number of element to delete\n");
 	scanf("%d", &n);
 	data = delete_nth_elem(&head, n);

@@ -16,7 +16,7 @@ struct list * hash_table[HASH_SIZE] = {NULL};
 int hash_func(const char *key)
 {
 	int i, sum = 0;
-	
+
 	for(i = 0; i < strlen(key); i++)
 		sum += key[i] * i * i;
 
@@ -39,7 +39,7 @@ void insert_elem(const char *key, int val)
 {
 	struct list *node;
 	int idx = hash_func(key);
-	
+
 	if (is_exist(hash_table[idx], key)) return;
 
 	node = (struct list*)malloc(sizeof(struct list));
@@ -130,7 +130,7 @@ int main(int argc, char *argv[])
 		printf("Num of args should be 1 (filename)\n");
 		return -1;
 	}
-		
+
 	filename = argv[1];
 	printf("Openning file %s\n", filename);
 	fp = fopen(filename, "r");
@@ -163,7 +163,7 @@ int main(int argc, char *argv[])
 		printf("%s is shown %d times in file\n", word, num);
 
 	}
-	
+
 	free_hash();
 	fclose(fp);
 

@@ -31,7 +31,7 @@ void print_failure(enum failure_type type)
 
 void list_add(list **head, int data) {
 	list *curr, *elem;
-	
+
 	if (!head) {
 		print_failure(TYPE_BAD_INPUT);
 		return;

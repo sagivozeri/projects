@@ -49,7 +49,7 @@ void print_table(int opt)
 
 			printf("|-----------------------------------|\n");
 			printf("|");
-			
+
 			for (j = 0; j < 9; j++)
 				printf(" %d |", Checked[i][j]);
 
@@ -64,7 +64,7 @@ void print_table(int opt)
 		for (i = 0; i < 9; i++) {
 			printf("|-----------------------------------|\n");
 			printf("|");
-			
+
 			for (j = 0; j < 9; j++)
 				printf(" %d |", Used[i*9 + j]);
 
@@ -179,7 +179,7 @@ void add_table()
 
 		for (col = 0; col < 9; col++)
 			Table[row][col] = val[col]-'0';
-		
+
 		row++;
 	}
 	printf("\n");

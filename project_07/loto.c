@@ -35,7 +35,7 @@ unsigned int get_bit_number(u64 num)
 
 	if (0 == num)
 		return num_to_bits[0];
-  
+
 	// Find last byte
 	byte = num & 0xff;
 
@@ -134,7 +134,7 @@ int main(int argc, char *argv[])
 
 	num_perm = calc_perm();
 	//num_perm = test();
-	
+
 	printf("num_perm = %llu\n", num_perm);
 
 	return 0;

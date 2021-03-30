@@ -22,7 +22,7 @@ int enter_pool()
 
 	prev_s = (prev_time - base_time) % 60;
 	curr_s = (curr_time - base_time) % 60;
-	
+
 	prev_idx = prev_s / NUM_SECONDS_PER_ELEM;
 	curr_idx = curr_s / NUM_SECONDS_PER_ELEM;
 

@@ -29,7 +29,7 @@ int DivFunc(int a, int b)
 int main(int argc, char *argv[])
 {
 	int val1, val2, resMul, resDiv;
-	
+
 	if (argc != 3) {
 		printf("wrong input - need two params\n");
 		return 1;

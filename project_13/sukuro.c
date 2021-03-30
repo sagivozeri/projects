@@ -131,7 +131,7 @@ void find_max(int **row_md, int **col_md, int size, int *max_row, int *max_col)
 			else
 				break;
 		}
-		
+
 		if (count > max)
 			max = count;
 	}
@@ -143,14 +143,14 @@ void find_max(int **row_md, int **col_md, int size, int *max_row, int *max_col)
 	/* column */
 	for (i = 0; i < size; i++) {
 		count = 0;
-		
+
 		for (j = 0; j < size; j++) {
 			if (col_md[i][j])
 				count++;
 			else
 				break;
 		}
-		
+
 		if (count > max)
 			max = count;
 	}
@@ -180,12 +180,12 @@ void print_full_table(int **table, int size, int **row_md, int **col_md,
 	int i, j, k;
 
 	print_separate_row(max_row, size, ' ', '-');
-	
+
 	for (i = 0; i < max_col; i++) {
 		for (k = 0; k < max_row; k++)
 			printf("   ");
 		printf(" |");
-		
+
 		for (j = 0; j < size; j++) {
 			if (col_md[j][i])
 				printf("  %-2d |", col_md[j][i]);

@@ -29,7 +29,7 @@ int get_max(int a, int b)
 int main(int argc, char *argv[])
 {
 	int a, b, max;
-	
+
 	if (argc != 3) {
 		printf("Num of args should be 2!\n");
 		return -1;

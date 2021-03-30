@@ -73,7 +73,7 @@ int main()
 	sort(A, n);
 	printf("The array after sorting is:\n");
 	print_arr(A, n);
-	
+
 	free(A);
 
 	return 0;

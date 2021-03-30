@@ -40,7 +40,7 @@ void add_node_to_graph(int id, int neigh_id)
 {
 	Node *head = node_arr[id];
 	Node *new_neigh = (Node*)malloc(sizeof(Node));
-	
+
 	if (!new_neigh) {
 		printf("Allocation failed\n");
 		return;
@@ -103,7 +103,7 @@ void print_path()
 void add_new_output_node(int id)
 {
 	OutNode *new, *tmp;
-	
+
 	new = (OutNode*)malloc(sizeof(*new));
 	if (!new) {
 		printf("Allocation failed\n");
@@ -121,7 +121,7 @@ void add_new_output_node(int id)
 		output_ptr = new;
 		print_path();
 		return;
-	}	
+	}
 
 	new->next = output_ptr->next;
 	if (output_ptr->next)
@@ -172,7 +172,7 @@ void find_path()
 	int curr_id = 0, visit_count = 0, neigh_id;
 
 	add_new_output_node(curr_id);
-	
+
 	while (visit_count < total_visit_count) {
 		if (has_free_neigh(curr_id, &neigh_id)) {
 			mark_neigh_as_visited(curr_id, neigh_id);

@@ -110,7 +110,7 @@ void draw_david(int **table, int size, int h)
 	draw_triangle(table, h, 0, 0);
 	draw_triangle(table, h, 1, h/2);
 	print_drawing(table, size);
-	
+
 }
 
 int main(){
@@ -132,7 +132,7 @@ int main(){
 	printf("A triangle in height %d\n\n", h);
 	draw_triangle_regular(table, size, h);
 	printf("\n");
-	
+
 	printf("An upside-down triangle in height %d\n\n", h);
 	draw_triangle_upside_down(table, size, h);
 	printf("\n");
@@ -140,7 +140,7 @@ int main(){
 	printf("A diamond in height %d\n\n", size);
 	draw_diamond(table, size, h);
 	printf("\n");
-	
+
 	if (h >=5) {
 		printf("A \"star of david\" in height %d\n\n", size);
 		draw_david(table, size, h);

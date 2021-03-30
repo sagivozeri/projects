@@ -44,7 +44,7 @@ void print_subsets(char *str, int len, char *print_str, int orig_len)
 	print_subsets(str+1, len-1, print_str, orig_len);
 	print_str[idx] = '\0';
 }
- 
+
 #define STR_MAX_LEN 100
 
 int main()

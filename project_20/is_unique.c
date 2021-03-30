@@ -15,7 +15,7 @@ int is_unique(const char *str)
 			return 0;
 		bucket[ascii_val]++;
 	}
-	
+
 	return 1;
 }
 #else

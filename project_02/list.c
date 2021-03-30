@@ -47,7 +47,7 @@ int delete_nth_element(list **head, int num, int *data)
 		free(curr);
 		return 0;
 	}
-	
+
 	if (!curr->next) {
 		print_failure(TYPE_NO_ELEM);
 		return 1;
@@ -240,7 +240,7 @@ void remove_dup(list *head)
 void list_add(list **head, int data)
 {
 	list *curr, *elem;
-	
+
 	if (!head) {
 		print_failure(TYPE_BAD_INPUT);
 		return;

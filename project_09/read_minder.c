@@ -29,13 +29,13 @@ int main()
 	char question[100] = "Answer the following: ";
 	char buf[100];
 	int ch, i, fill, len;
-	
+
 	len = strlen(question);
 
 	while (1) {
 		i = 0;
 		fill = 1;
-		
+
 		disable_waiting_for_enter();
 
 		/* Key reading loop */
@@ -83,7 +83,7 @@ int main()
 int main()
 {
 	int ch, i, fill, len;
-	
+
 //	disable_waiting_for_enter();
 
 	while (1) {
