@@ -150,6 +150,8 @@ int main(int argc, char *argv[])
 		insert_elem(word, num+1);
 	}
 
+	fclose(fp);
+
 	print_hash();
 
 	printf("\n\n");
@@ -165,7 +167,6 @@ int main(int argc, char *argv[])
 	}
 
 	free_hash();
-	fclose(fp);
 
 	return 0;
 }
