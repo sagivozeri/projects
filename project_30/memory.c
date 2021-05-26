@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
+/* Students struct */
 struct student {
 	int age;
 	int grade;
