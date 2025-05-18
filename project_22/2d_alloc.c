@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ROWS 3
-#define COLS 5
+#define ROWS 10
+#define COLS 20
 
 int **A;
 
