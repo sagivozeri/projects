@@ -42,10 +42,10 @@ void list_del_back(List **head) {
 void list_reverse(List **head) {
   List *prev = NULL, *curr, *next;
 
-  curr = *head;
-
-  if (!curr)
+  if (!head || !(*head))
     return;
+
+  curr = *head;
 
   while (curr->next) {
     next = curr->next;
